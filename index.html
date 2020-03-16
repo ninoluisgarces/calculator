@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="main.css" >
+    <script src="main.js" type="text/javascript" ></script>
+
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+
+        <form name="form">
+            <h1> CALCULATOR </h1>
+            <div class="question">
+                <input type="text" placeholder="0" name="userInput">
+
+            </div>
+
+            <div class="display">
+                Result: <input name="displayResult">
+
+            </div>
+
+            <div class="functions">
+                <input type="button" class="submit" name="addition" value="+" onClick="calculateNum(addition.value)"> 
+                <input type="button" class="submit" name="subtraction" value="-" onClick="calculateNum(subtraction.value)">
+                <input type="button" class="submit" name="multiply" value="*" onClick="calculateNum(multiply.value)">
+                <input type="button" class="submit" name="divide" value="/" onClick="calculateNum(divide.value)">
+
+            </div>
+
+            <div class="functions">
+                <input type="button" class="submit"  name="root" value="**2"  onClick="calculateNum(root.value)">
+                <input type="button" class="submit"  name="percent" value="%" onClick="calculateNum(percent.value)">
+                <input type="button" class="submit"  name="equals" value="="  onClick="displayResult.value=eval(userInput.value)"> 
+                <input type="button" class="submit"  name="clear" value="C"   onClick="clearNum(userInput.value)">
+
+            </div>
+        </form>
+
+    </main>
+    
+</body>
+</html>
